@@ -85,7 +85,7 @@ analytics:
 # Site Author
 author:
   name             : "Pradeep Vemulakonda"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.png"
   bio              : "Solutions Designer, with a passion for learning new technologies."
   location         : "Sydney"
   email            :
