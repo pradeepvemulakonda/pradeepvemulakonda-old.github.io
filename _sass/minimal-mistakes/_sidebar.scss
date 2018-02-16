@@ -116,7 +116,9 @@
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid $border-color;
+      display: block;
+      margin: auto;
+      //border: 1px solid $border-color;
     }
   }
 }
@@ -130,6 +132,7 @@
 
   @include breakpoint($large) {
     display: block;
+    text-align: center;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -165,6 +168,7 @@
 
 .author__urls-wrapper {
   position: relative;
+  text-align: center;
   display: table-cell;
   vertical-align: middle;
   font-family: $sans-serif;
