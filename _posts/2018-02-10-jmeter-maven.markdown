@@ -2,12 +2,12 @@
 layout: single
 title:  "Jmeter build using Maven"
 date:   2018-02-10 19:20:30 +1100
-categories: JMeter Information-Technology Maven
+categories: tech
 comments: true
 ---
 <div dir="ltr" style="text-align: left;" trbidi="on">
 <div class="separator" style="clear: both; text-align: center;">
-<a href="https://4.bp.blogspot.com/-FRZLHeHEAp0/WRGYfUBb7tI/AAAAAAAARBc/IOXRKzau4uMF7O6w62O0neRXrWRiBRfUgCLcB/s1600/DSC_0820.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://4.bp.blogspot.com/-FRZLHeHEAp0/WRGYfUBb7tI/AAAAAAAARBc/IOXRKzau4uMF7O6w62O0neRXrWRiBRfUgCLcB/s1600/DSC_0820.JPG" /></a></div>
+<a><img border="0" src="/assets/images/jmeter.jpg"/></a></div>
 <br />
 Recently I had a requirement to run JMeter scripts in Jenkins/bamboo.<br />
 <br />

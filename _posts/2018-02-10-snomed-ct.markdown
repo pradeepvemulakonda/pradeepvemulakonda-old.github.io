@@ -2,14 +2,14 @@
 layout: single
 title:  "Why the role of IT in Financial Institutes is more important than ever!"
 date:   2018-02-10 19:20:30 +1100
-categories: Finance Information-Technology
+categories: tech
 comments: true
 ---
 <div dir="ltr" style="text-align: left;" trbidi="on">
 <div class="separator" style="clear: both; text-align: center;">
 </div>
 <div class="separator" style="clear: both; text-align: center;">
-<a href="http://www.bizarrewordbazaar.com/wp-content/uploads/2015/06/dilbert1.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://www.bizarrewordbazaar.com/wp-content/uploads/2015/06/dilbert1.jpg" height="224" width="640" /></a></div>
+<a><img border="0" src="/assets/images/snomed-ct.jpg"/></a></div>
 <div class="separator" style="clear: both; text-align: center;">
 <br /></div>
 <br />

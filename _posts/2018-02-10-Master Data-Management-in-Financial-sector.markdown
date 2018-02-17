@@ -2,12 +2,12 @@
 layout: single
 title:  "Master Data Management in Financial sector"
 date:   2018-02-10 19:20:30 +1100
-categories: kafka design banking
+categories: design
 comments: true
 ---
 <div dir="ltr" style="text-align: left;" trbidi="on">
 <div class="separator" style="clear: both; text-align: center;">
-<a href="https://dilberttheintern.files.wordpress.com/2010/05/softwaredevelopment.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="https://dilberttheintern.files.wordpress.com/2010/05/softwaredevelopment.jpg" width="640" /></a></div>
+<a><img border="0" src="/assets/images/mdm.jpg"/></a></div>
 <br />
 One of the problems with large banks is that they are monsters created by mergers and acquisitions.<br />
 <br />

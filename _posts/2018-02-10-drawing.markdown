@@ -2,10 +2,7 @@
 layout: single
 title:  "For my daughter"
 date:   2018-02-10 19:20:30 +1100
-categories: JMeter Information-Technology Maven
+categories: personal
 comments: true
 ---
-<div dir="ltr" style="text-align: left;" trbidi="on">
-<div class="separator" style="clear: both; text-align: center;">
-<a href="https://2.bp.blogspot.com/-14mx474zzDM/WmsWdCmnfgI/AAAAAAAARcQ/IQHCsABRLLgfukodDAKoyo4wc-RgQnSfwCLcBGAs/s1600/20180126_224453%257E2.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="860" height="640" src="https://2.bp.blogspot.com/-14mx474zzDM/WmsWdCmnfgI/AAAAAAAARcQ/IQHCsABRLLgfukodDAKoyo4wc-RgQnSfwCLcBGAs/s640/20180126_224453%257E2.jpg" width="343" /></a></div>
-<br /></div>
+![Elsa and Anna](/assets/images/elsa.jpg){:class="img-responsive"}

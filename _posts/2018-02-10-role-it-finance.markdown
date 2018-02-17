@@ -2,7 +2,7 @@
 layout: single
 title:  "Snomed-CT"
 date:   2018-02-10 19:20:30 +1100
-categories: Snomed Health EHR Information-Technology
+categories: general
 comments: true
 ---
 <div dir="ltr" style="text-align: left;" trbidi="on">
