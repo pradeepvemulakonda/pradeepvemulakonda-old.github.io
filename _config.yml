@@ -16,7 +16,7 @@ description              : "Design bytes"
 url                      : "https://vemulakonda.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/teaser.png"
+teaser                   : "/assets/images/teaser.jpg"
 # breadcrumbs            : true
 words_per_minute         : 200
 comments:
@@ -85,7 +85,7 @@ analytics:
 # Site Author
 author:
   name             : "Pradeep Vemulakonda"
-  avatar           : "/assets/images/bio-photo.png"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Solutions Designer, with a passion for learning new technologies."
   location         : "Sydney"
   email            :
