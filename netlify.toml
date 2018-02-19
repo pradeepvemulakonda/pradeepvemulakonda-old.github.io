@@ -6,7 +6,7 @@
     X-XSS-Protection = "1; mode=block"
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = "default-src 'none'; script-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline';frame-ancestors 'none';"
+    Content-Security-Policy = "default-src 'none'; script-src 'self' 'unsafe-inline' 'https://vemulakonda.disqus.com/embed.js'; connect-src 'self'; img-src 'self' 'https://cloudfront.net'; style-src 'self' 'unsafe-inline';frame-ancestors 'none';"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload; always;"
     
     # COMMENT: Multi-key header rules are expressed with multi-line strings
