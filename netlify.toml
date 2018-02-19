@@ -6,10 +6,15 @@
     X-XSS-Protection = "1; mode=block"
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = "default-src 'none'; script-src 'self' 'unsafe-inline' *.disqus.com *.disquscdn.com https://disqus.com; connect-src 'self'; img-src 'self' *.cloudfront.net; style-src 'self' 'unsafe-inline' *.disquscdn.com;frame-ancestors 'none'; frame-src ttps://disqus.com/"
+    Content-Security-Policy = '''
+        default-src 'none'; 
+        script-src 'self' 'unsafe-inline' *.disqus.com *.disquscdn.com https://disqus.com; 
+        connect-src 'self'; img-src 'self' *.cloudfront.net; 
+        style-src 'self' 'unsafe-inline' *.disquscdn.com;frame-ancestors 'none'; 
+        frame-src https://disqus.com/
+      '''
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload; always;"
     
     # COMMENT: Multi-key header rules are expressed with multi-line strings
-    Link = '''
-    </main.css>; rel=preload; as=stylesheet '''
+    Link = "</main.css>; rel=preload; as=stylesheet"
 
