@@ -15,7 +15,7 @@ name                     : "Pradeep Vemulakonda"
 description              : "Design bytes"
 url                      : "https://vemulakonda.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : pradeepvemulakonda
+repository               : pradeepvemulakonda/pradeepvemulakonda.github.io
 teaser                   : "/assets/images/teaser.jpg"
 # breadcrumbs            : true
 words_per_minute         : 200
