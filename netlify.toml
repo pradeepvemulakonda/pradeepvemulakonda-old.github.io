@@ -12,7 +12,8 @@
         connect-src 'self' *.services.disqus.com; 
         img-src 'self' *.cloudfront.net; 
         style-src 'self' 'unsafe-inline' *.disquscdn.com;frame-ancestors 'none'; 
-        frame-src https://disqus.com/
+        frame-src https://disqus.com/;
+        form-acton https://api.staticman.net/
       '''
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload; always;"
     
