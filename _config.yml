@@ -19,6 +19,7 @@ repository               : pradeepvemulakonda/pradeepvemulakonda.github.io
 teaser                   : "/assets/images/teaser.jpg"
 # breadcrumbs            : true
 words_per_minute         : 200
+include                  : _redirects
 comments:
   provider               : "staticman_v2"
   disqus:
