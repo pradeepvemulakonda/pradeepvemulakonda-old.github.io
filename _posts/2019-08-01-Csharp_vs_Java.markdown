@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "C# for Java Developers"
-date:   2019-08-01 19:20:30 +1100
+date:   2019-01-08 19:20:30 +1100
 categories: coding
 comments: true
 repository: pradeepvemulakonda
@@ -30,6 +30,8 @@ Both languages have automated garbage collection and use heap as the primary sto
 - *C# Specifications:*
 
 #### Runtime
+- *JVM Specification:*
+- *CLR Specification:*
 
 #### Memory Management
 
