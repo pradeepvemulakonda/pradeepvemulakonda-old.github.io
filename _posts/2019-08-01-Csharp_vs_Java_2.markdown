@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "C# for Java Developers&#58 Types"
+title:  "C# for Java Developers: Types"
 date:   2019-08-01 19:21:30 +1100
 categories: coding
 comments: true
