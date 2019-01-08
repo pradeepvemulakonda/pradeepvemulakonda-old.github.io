@@ -16,7 +16,7 @@ Ever wonder why specifications from a standard body are complex? Have a look at 
 <br />
 A couple of years ago, I came across SNOMED-CT and found that not all specifications are made equal. Being an IT professional, I expected such kind of work from an IT major, but surprisingly it came from the medical community.<br />
 <br />
-SNOMED-CT is a&nbsp;specification for identifying, defining and describing medical terms. This should have been one of the complex specification in the know IT world but is one of the simplest.<br />
+SNOMED-CT is a&nbsp;specification for identifying, defining and describing medical terms. This should have been one of the complex specification in the known IT world but is one of the simplest.<br />
 <br />
 The authors of this specification understood the underlying structure of the data should closely represent the domain model, which is the medical terminology context. The following is the basis for the specification(I will use terminology and specification interchangeably in this blog):<br />
 <br />
