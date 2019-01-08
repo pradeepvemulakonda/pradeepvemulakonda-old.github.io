@@ -30,6 +30,8 @@ Both languages have automated garbage collection and use heap as the primary sto
 - *C# Specifications:*
 
 #### Runtime
+- *JVM Specification:*
+- *CLR Specification:*
 
 #### Memory Management
 
