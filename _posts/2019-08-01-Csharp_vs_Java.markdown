@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "C# for Java Developers"
-date:   2019-08-01 19:20:30 +1100
+date:   2019-01-08 19:20:30 +1100
 categories: coding
 comments: true
 repository: pradeepvemulakonda
