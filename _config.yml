@@ -5,8 +5,6 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
 # Site Settings
 locale                   : "en-US"
 future                   : true
@@ -20,7 +18,7 @@ repository               : pradeepvemulakonda/pradeepvemulakonda.github.io
 teaser                   : "/assets/images/teaser.jpg"
 breadcrumbs              : true
 words_per_minute         : 100
-include                  : _redirects
+theme                    : materialize-jekyll
 comments:
   provider               : "staticman_v2"
   disqus:
@@ -122,6 +120,7 @@ author:
 include:
   - .htaccess
   - _pages
+  - _redirects
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
