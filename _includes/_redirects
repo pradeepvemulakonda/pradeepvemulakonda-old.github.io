@@ -1,0 +1,2 @@
+# Redirect domain aliases to primary domain
+https://pradeep.vemulakonda.com/* https://vemulakonda.com/:splat 301!

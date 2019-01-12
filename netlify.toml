@@ -7,13 +7,14 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy = '''
-        default-src 'none'; 
-        script-src 'self' 'unsafe-inline'; 
-        connect-src 'self'; 
-        img-src 'self' *.cloudfront.net; 
-        style-src 'self' 'unsafe-inline' *.disquscdn.com;frame-ancestors 'none'; 
-        frame-src https://disqus.com/;
-        form-acton https://api.staticman.net/
+        default-src 'none' https://vemulakonda.com; 
+        script-src 'self' 'unsafe-inline' https://vemulakonda.com; 
+        connect-src 'self' https://vemulakonda.com; 
+        img-src 'self' *.cloudfront.net https://vemulakonda.com; 
+        style-src 'self' 'unsafe-inline' https://vemulakonda.com;
+        frame-ancestors 'none' https://vemulakonda.com; 
+        frame-src https://vemulakonda.com;
+        form-acton https://api.staticman.net/ https://vemulakonda.com
       '''
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload; always;"
     
