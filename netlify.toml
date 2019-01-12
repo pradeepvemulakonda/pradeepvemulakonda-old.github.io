@@ -8,8 +8,8 @@
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy = '''
         default-src 'none'; 
-        script-src 'self' 'unsafe-inline' *.disqus.com *.disquscdn.com https://disqus.com; 
-        connect-src 'self' *.services.disqus.com; 
+        script-src 'self' 'unsafe-inline'; 
+        connect-src 'self'; 
         img-src 'self' *.cloudfront.net; 
         style-src 'self' 'unsafe-inline' *.disquscdn.com;frame-ancestors 'none'; 
         frame-src https://disqus.com/;
