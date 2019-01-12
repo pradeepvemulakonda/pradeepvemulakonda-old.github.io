@@ -21,7 +21,7 @@ words_per_minute         : 100
 theme                    : minimal-mistakes-jekyll
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 comments:
-  provider               : "staticman_v2"
+  provider               : "staticman_v3"
   disqus:
     shortname            : vemulakonda
   discourse:
