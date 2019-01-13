@@ -8,7 +8,7 @@
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy = '''
         default-src https://vemulakonda.com; 
-        script-src 'self' 'unsafe-inline' *.cloudfront.net *.fontawesome.com *.netlify.com *.unpkg.com https://vemulakonda.com; 
+        script-src 'self' 'unsafe-inline' *.cloudfront.net *.fontawesome.com *.netlify.com https://unpkg.com https://vemulakonda.com; 
         connect-src 'self' *.staticman.net https://vemulakonda.com; 
         img-src 'self' *.cloudfront.net https://vemulakonda.com; 
         style-src 'self' 'unsafe-inline' *.cloudfront.net https://vemulakonda.com;
