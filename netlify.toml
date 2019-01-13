@@ -14,7 +14,6 @@
         style-src 'self' 'unsafe-inline' *.cloudfront.net https://vemulakonda.com;
         frame-ancestors https://vemulakonda.com; 
         frame-src https://vemulakonda.com;
-        form-acton https://api.staticman.net/ https://vemulakonda.com
       '''
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload; always;"
     
