@@ -6,6 +6,7 @@ categories: coding
 comments: true
 repository: pradeepvemulakonda
 staticman.branch: master
+link: http://url-you-want-linked
 ---
 
 ### C# for Java Developers
@@ -35,4 +36,6 @@ Both languages have automated garbage collection and use heap as the primary sto
 
 #### Memory Management
 
-#### Types
+#### Next 
+{{ site.baseurl }}{% post_url 2019-01-08-Csharp_vs_Java_2 %}
+
