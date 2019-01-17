@@ -2,11 +2,10 @@
 layout: single
 title:  "C# for Java Developers"
 date:   2019-01-08 9:20:30 +1100
-categories: coding
+categories: csharp
 comments: true
 repository: pradeepvemulakonda
 staticman.branch: master
-link: http://url-you-want-linked
 ---
 
 ### C# for Java Developers
@@ -27,15 +26,11 @@ Both languages have automated garbage collection and use heap as the primary sto
 
 #### Specifications
 
-- *Java Specifications:*
-- *C# Specifications:*
+- *Java Specifications:* [Java SE Specification](https://docs.oracle.com/javase/specs/jls/se11/html/index.html)
+- *C# Specifications:* [C# 6 draft specs](https://github.com/dotnet/csharplang/tree/master/spec)
 
 #### Runtime
-- *JVM Specification:*
-- *CLR Specification:*
+- *JVM Specification:* [JVM Specification](https://docs.oracle.com/javase/specs/jvms/se11/html/index.html)
+- *CLR Specification:* [CLR Specification](https://www.ecma-international.org/publications/standards/Ecma-335.htm)
 
-#### Memory Management
-
-#### Next 
-{{ site.baseurl }}{% post_url 2019-01-08-Csharp_vs_Java_2 %}
-
+#### Next: [Types in C# and Java]({{ site.baseurl }}{% post_url 2019-01-08-Csharp_vs_Java_2 %})
