@@ -18,5 +18,5 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload; always;"
     
     # COMMENT: Multi-key header rules are expressed with multi-line strings
-    Link = "</main.css>; rel=preload; as=stylesheet"
+    Link = "</main.css>; rel=preload; as=style"
 
