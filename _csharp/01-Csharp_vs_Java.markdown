@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: page-collection
 title:  "C# for Java Developers"
 date:   2019-01-08 9:20:30 +1100
 categories: csharp
@@ -33,4 +33,3 @@ Both languages have automated garbage collection and use heap as the primary sto
 - *JVM Specification:* [JVM Specification](https://docs.oracle.com/javase/specs/jvms/se11/html/index.html)
 - *CLR Specification:* [CLR Specification](https://www.ecma-international.org/publications/standards/Ecma-335.htm)
 
-#### Next: [Types in C# and Java]({{ site.baseurl }}{% post_url 2019-01-08-Csharp_vs_Java_2 %})
