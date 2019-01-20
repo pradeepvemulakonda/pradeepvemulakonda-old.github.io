@@ -95,7 +95,7 @@ The relationship is of the form (concept)---[relationship]---(concept). The conc
 <br />
 <br />
 <div class="separator" style="clear: both; text-align: center;">
-<a><img border="0" src="/assets/images/logicalModel.png"/></a></div></div></div>
+<a><img border="0" src="/assets/images/logicalModel.png"/></a></div>
 <br /></div>
 <div>
 For a detailed understanding of the SNOMED-CT terminology&nbsp;please visit <a href="https://confluence.ihtsdotools.org/display/DOCSTART/5.+SNOMED+CT+Logical+Model" target="_blank">SNOMED-CT tutorial</a>&nbsp;</div>
