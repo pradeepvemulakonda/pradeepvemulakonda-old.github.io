@@ -4,7 +4,6 @@ title:  "Jmeter build using Maven"
 date:   2018-02-10 19:20:30 +1100
 categories: tech
 comments: true
-classes: wide
 ---
 <div dir="ltr" style="text-align: left;" trbidi="on">
 <div class="separator" style="clear: both; text-align: center;">

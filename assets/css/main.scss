@@ -11,14 +11,6 @@
             flex-direction: column-reverse;  
         }
     }
-}  
-
-#main {
-    & img {
-        width: 95%;
-        z-index: 0;
-        overflow: hidden;
-    }
 }
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
