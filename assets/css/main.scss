@@ -13,5 +13,12 @@
     }
 }
 
+#main {
+    & img {
+        width: 99%;
+        z-index: 0;
+    }
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
