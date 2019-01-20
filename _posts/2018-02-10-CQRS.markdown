@@ -6,6 +6,7 @@ categories: design
 comments: true
 repository: pradeepvemulakonda
 staticman.branch: master
+classes: wide
 ---
 <div dir="ltr" style="text-align: left;" trbidi="on">
 Overs the years i have the idea of decoupling the query and actions on a resource and came up with examples where ever I could. Bit i was not able to articulate the same in terms of a pattern. I recently found there is a similar pattern and obviously a popular pattern in today microseconds world. This pattern is called CQRS(Command Query Request Segregation). Yes, I know, who would have come up with such a mouthful, but the underlying concept is pretty simple. This pattern specifies that all queries and command (actions that mutate state) should be segregated.<br />
