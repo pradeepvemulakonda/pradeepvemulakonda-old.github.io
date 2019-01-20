@@ -242,6 +242,10 @@ compress_html:
   ignore:
     envs: development
 
+collections:
+  csharp:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
