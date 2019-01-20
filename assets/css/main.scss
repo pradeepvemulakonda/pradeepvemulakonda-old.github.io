@@ -3,6 +3,10 @@
 
 @charset "utf-8";
 
+$masthead-link-color: white;
+$navicon-link-color-hover: cadetblue;
+$navicon-link-color: white;
+
 .main {
     &.collections {
         display: flex;
@@ -17,6 +21,22 @@
     & img {
         width: 99%;
         z-index: 0;
+    }
+}
+
+.masthead {
+    background-color: cadetblue;
+    .greedy-nav {
+        background-color: cadetblue;
+        .hidden-links {
+            background-color: teal;
+        }
+    }
+    .greedy-nav__toggle {
+        background-color: white;
+    }
+    .search__toggle {
+        color: white;
     }
 }
 
