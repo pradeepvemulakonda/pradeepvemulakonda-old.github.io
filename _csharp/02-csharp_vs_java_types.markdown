@@ -25,10 +25,11 @@ This topic contains the following sections:
 * [Characteristics of Type members](#headChar)
 
 #### <a name="headTypes"></a> Types
+
 |      | Types                                                          |
 |------|----------------------------------------------------------------|
-| CLR |  <li>Classes</li><li>Structures</li><li>Enumerations</li><li>Interfaces</li><li>Delegates |
-| JVM   | <li>Classes</li><li>Arrays</li><li>Enumerations</li><li>Interfaces                |
+| CLR | {::nomarkdown}<li>Classes</li><li>Structures</li><li>Enumerations</li><li>Interfaces</li><li>Delegates {:/}|
+| JVM   | {::nomarkdown}<li>Classes</li><li>Arrays</li><li>Enumerations</li><li>Interfaces {:/}|
 
 #### <a name="headDef"></a> Type definitions
 
