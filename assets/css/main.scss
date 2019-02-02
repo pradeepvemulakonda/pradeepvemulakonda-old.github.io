@@ -22,6 +22,22 @@ $navicon-link-color: white;
         width: 99%;
         z-index: 0;
     }
+
+    table {
+        display: inline-table;
+        thead {
+            color: white;
+            background-color: cadetblue;
+            border: 2px solid mix(rgb(73, 114, 87), teal, 25%);
+        }
+
+
+        td {
+            padding: 0.5em;
+            border: 1px solid mix(rgb(78, 153, 55), teal, 50%);
+        }
+    }
+  
 }
 
 .masthead {
