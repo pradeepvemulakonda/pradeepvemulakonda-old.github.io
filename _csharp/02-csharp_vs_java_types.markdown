@@ -1,20 +1,18 @@
 ---
 layout: page-collection
-title:  "C# for Java Developers: Types"
-date:   2019-08-01 19:21:30 +1100
+title: 'C# for Java Developers: Types'
 categories: csharp
 comments: true
 repository: pradeepvemulakonda
 staticman.branch: master
 ---
-
 ### CLS and JVM Types:
 
 Both specifications defines how types are declared, used, and managed in the language runtime([VES](https://en.wikipedia.org/wiki/Virtual_Execution_System), [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine)) and is also an important part of the runtime's support for cross-language integration.
 
 * Enables type safety and high performant code across platforms and languagues.
 * Defines rules that the languague must follow, which ensures objects created in different languagues can intercat with each other.
-([VB.Net](https://en.wikipedia.org/wiki/Visual_Basic_.NET) can talk to C# libraries, [Groovy](https://en.wikipedia.org/wiki/Apache_Groovy) can use Java libraries).
+  ([VB.Net](https://en.wikipedia.org/wiki/Visual_Basic_.NET) can talk to C# libraries, [Groovy](https://en.wikipedia.org/wiki/Apache_Groovy) can use Java libraries).
 * Provides primitive types used in application development.
 
 This topic contains the following sections:
@@ -26,12 +24,25 @@ This topic contains the following sections:
 
 #### <a name="headTypes"></a> Types
 
-|      | Types                                                          |
-|------|----------------------------------------------------------------|
-| CLR | {::nomarkdown}<li>Classes</li><li>Structures</li><li>Enumerations</li><li>Interfaces</li><li>Delegates {:/}|
-| JVM   | {::nomarkdown}<li>Classes</li><li>Arrays</li><li>Enumerations</li><li>Interfaces {:/}|
+|     | Types                                                                                                       |
+| --- | ----------------------------------------------------------------------------------------------------------- |
+| CLR | {::nomarkdown}<li>Classes</li><li>Structures</li><li>Enumerations</li><li>Interfaces</li><li>Delegates {:/} |
+| JVM | {::nomarkdown}<li>Classes</li><li>Arrays</li><li>Enumerations</li><li>Interfaces {:/}                       |
 
 #### <a name="headDef"></a> Type definitions
+
+Class:
+
+|                        | C#       | Java     |
+| ---------------------- | -------- | -------- |
+| Keyword                | class    | class    |
+| inheritance(class)     | single   | single   |
+| inheritance(Interface) | multiple | multiple |
+| inheritance(class)     | single   | single   |
+| inheritance(class)     | single   | single   |
+| inheritance(class)     | single   | single   |
+| inheritance(class)     | single   | single   |
+| inheritance(class)     | single   | single   |
 
 #### <a name="headMem"></a> Type members
 
