@@ -4,6 +4,7 @@ title:  "C# for Java Developers"
 date:   2019-01-08 9:20:30 +1100
 categories: csharp
 comments: true
+classes: wide
 repository: pradeepvemulakonda
 staticman.branch: master
 ---

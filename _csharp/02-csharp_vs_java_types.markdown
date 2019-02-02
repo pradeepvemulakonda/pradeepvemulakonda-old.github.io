@@ -3,6 +3,7 @@ layout: page-collection
 title: 'C# for Java Developers: Types'
 categories: csharp
 comments: true
+classes: wide
 repository: pradeepvemulakonda
 staticman.branch: master
 ---
@@ -33,16 +34,35 @@ This topic contains the following sections:
 
 Class:
 
-|                        | C#       | Java     |
-| ---------------------- | -------- | -------- |
-| Keyword                | class    | class    |
-| inheritance(class)     | single   | single   |
-| inheritance(Interface) | multiple | multiple |
-| inheritance(class)     | single   | single   |
-| inheritance(class)     | single   | single   |
-| inheritance(class)     | single   | single   |
-| inheritance(class)     | single   | single   |
-| inheritance(class)     | single   | single   |
+<div class="ctable">
+    <div class="column head">
+        <div>Keyword</div>
+    </div>
+    <div class="column content">
+        <div class="content-wrapper">
+            <div>
+                <div class="lang">C#</div>
+                <div class="desc">
+                    <div class="high-background">
+                        {% ihighlight csharp %} 
+                            class ClassA {}
+                        {% endihighlight %}
+                    </div> 
+                </div>
+            </div>
+            <div>
+                <div class="lang">Java</div>
+                <div class="desc">
+                    <div class="high-background">
+                        {% ihighlight csharp %} 
+                            class ClassA {}
+                        {% endihighlight %}
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 #### <a name="headMem"></a> Type members
 

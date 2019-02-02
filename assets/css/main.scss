@@ -37,6 +37,73 @@ $navicon-link-color: white;
             border: 1px solid mix(rgb(78, 153, 55), teal, 50%);
         }
     }
+
+    .ctable {
+        display: flex;
+        flex-wrap: wrap;
+        .column {
+            &.head {
+                display: flex;
+                color: white;
+                background-color: cadetblue;
+                min-width: 200px;
+                border: 2px solid mix(rgb(73, 114, 87), teal, 25%);
+                div {
+                    padding: 0.5rem;
+                    margin: auto;   
+                }
+                @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+                    /* Styles */
+                    flex: 0 1 100%;
+                }
+            }
+
+            &.lang {
+                div {
+                    padding: 0.5rem;
+                    background-color: antiquewhite;
+                    border: 1px solid mix(rgb(73, 114, 87), teal, 25%);
+                    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+                        /* Styles */
+                        border-left: 1px solid mix(rgb(73, 114, 87), teal, 25%);;
+                    }
+                    border-left: none;
+                }
+            }
+
+            &.content {
+                flex: 1;
+                & > div {
+                    border: 1px solid mix(rgb(73, 114, 87), teal, 25%);
+                    border-left: none;
+                }
+
+                .content-wrapper {
+                    display: flex;
+                    flex-direction: column;
+
+                    &  > div {
+                        display: flex;
+                        border: 1px solid mix(rgb(73, 114, 87), teal, 25%);
+
+                        .lang {
+                            min-width: 50px;
+                        }
+
+                        .desc {
+                            flex: 1;
+                        }
+
+                        .high-background {
+                            background: black;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+    }
   
 }
 
