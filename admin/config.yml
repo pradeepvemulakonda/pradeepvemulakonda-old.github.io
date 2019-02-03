@@ -12,7 +12,6 @@ backend:
       create: true # Allow users to create new documents in this collection
       extension: markdown
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-      publish_mode: editorial_workflow
       fields: # The fields each document in this collection have
         - {label: "layout", name: "layout", widget: "hidden", default: "single"}
         - {label: "title", name: "title", widget: "string", tagname: "h1"}
@@ -30,7 +29,6 @@ backend:
       create: true # Allow users to create new documents in this collection
       extension: markdown
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-      publish_mode: editorial_workflow
       fields: # The fields each document in this collection have
         - {label: "layout", name: "layout", widget: "hidden", default: "single"}
         - {label: "title", name: "title", widget: "string", tagname: "h1"}
