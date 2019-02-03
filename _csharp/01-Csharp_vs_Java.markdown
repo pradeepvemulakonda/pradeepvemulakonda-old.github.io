@@ -31,5 +31,3 @@ Both languages have automated garbage collection and use heap as the primary sto
 #### Runtime
 - *JVM Specification:* [JVM Specification](https://docs.oracle.com/javase/specs/jvms/se11/html/index.html)
 - *CLR Specification:* [CLR Specification](https://www.ecma-international.org/publications/standards/Ecma-335.htm)
-
-<h1>{{ page.relative_directory }} directory</h1>
