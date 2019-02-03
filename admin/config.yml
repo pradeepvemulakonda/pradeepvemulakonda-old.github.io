@@ -3,7 +3,6 @@ backend:
   branch: master # Branch to update (master by default)
 
   media_folder: "img/uploads" # Folder where user uploaded files should go
-  publish_mode: editorial_workflow
 
   collections: # A list of collections the CMS should be able to edit
     - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -13,6 +12,7 @@ backend:
       create: true # Allow users to create new documents in this collection
       extension: markdown
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      publish_mode: editorial_workflow
       fields: # The fields each document in this collection have
         - {label: "layout", name: "layout", widget: "hidden", default: "single"}
         - {label: "title", name: "title", widget: "string", tagname: "h1"}
@@ -30,6 +30,7 @@ backend:
       create: true # Allow users to create new documents in this collection
       extension: markdown
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      publish_mode: editorial_workflow
       fields: # The fields each document in this collection have
         - {label: "layout", name: "layout", widget: "hidden", default: "single"}
         - {label: "title", name: "title", widget: "string", tagname: "h1"}
