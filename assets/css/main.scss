@@ -88,7 +88,8 @@ $navicon-link-color: white;
 
                         .lang {
                             display: flex;
-                            margin: auto;
+                            align-items: center;
+                            justify-content: center;
                             min-width: 50px;
                             background: burlywood;
                         }
