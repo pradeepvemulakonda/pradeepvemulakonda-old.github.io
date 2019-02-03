@@ -91,7 +91,7 @@ $navicon-link-color: white;
                             align-items: center;
                             justify-content: center;
                             min-width: 50px;
-                            background: burlywood;
+                            background: aliceblue;
                         }
 
                         .desc {
@@ -99,7 +99,13 @@ $navicon-link-color: white;
                         }
 
                         .high-background {
+                            border-radius: 0.5em;
+                            margin: 0.3em;
                             background: black;
+
+                            .pre-code {
+                                margin: 1em;
+                            }
                         }
                     }
                 }

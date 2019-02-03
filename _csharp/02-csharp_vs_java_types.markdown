@@ -41,19 +41,21 @@ Class:
     <div class="column content">
         <div class="content-wrapper">
             <div>
-                <div class="lang">C#</div>
+                <div class="lang"><img alt="csharp" src="/assets/images/cs.svg"></div>
                 <div class="desc">
+                Class in C# is defined by the keyword 'class'
                     <div class="high-background">
+                   
 {% ihighlight csharp %} 
 class ClassA {
-      
+
 }
 {% endihighlight %}
                     </div> 
                 </div>
             </div>
             <div>
-                <div class="lang">Java</div>
+                <div class="lang"><img alt="csharp" src="/assets/images/java.svg"></div>
                 <div class="desc">
                     <div class="high-background">
 {% ihighlight csharp %} 
