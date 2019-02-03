@@ -87,7 +87,10 @@ $navicon-link-color: white;
                         border: 1px solid mix(rgb(73, 114, 87), teal, 25%);
 
                         .lang {
+                            display: flex;
+                            margin: auto;
                             min-width: 50px;
+                            background: burlywood;
                         }
 
                         .desc {
@@ -100,11 +103,8 @@ $navicon-link-color: white;
                     }
                 }
             }
-
-            
         }
     }
-  
 }
 
 .masthead {

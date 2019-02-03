@@ -15,7 +15,7 @@ module Jekyll
 				"class=\"highlight language-#{@lang.to_s.gsub('+', '-')}\"",
 				"data-lang=\"#{@lang.to_s}\""
 			].join(" ")
-			"<code #{code_attributes}>#{code.chomp.strip}</code>"
+			"<code #{code_attributes}><pre>#{code.chomp.strip}</pre></code>"
 		end
 
 		def render(context)

@@ -44,9 +44,11 @@ Class:
                 <div class="lang">C#</div>
                 <div class="desc">
                     <div class="high-background">
-                        {% ihighlight csharp %} 
-                            class ClassA {}
-                        {% endihighlight %}
+{% ihighlight csharp %} 
+class ClassA {
+      
+}
+{% endihighlight %}
                     </div> 
                 </div>
             </div>
@@ -54,9 +56,11 @@ Class:
                 <div class="lang">Java</div>
                 <div class="desc">
                     <div class="high-background">
-                        {% ihighlight csharp %} 
-                            class ClassA {}
-                        {% endihighlight %}
+{% ihighlight csharp %} 
+class ClassA {
+    
+}
+{% endihighlight %}
                     </div> 
                 </div>
             </div>
