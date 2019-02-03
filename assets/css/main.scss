@@ -38,6 +38,12 @@ $navicon-link-color: white;
         }
     }
 
+    .nav__title {
+        background-color: cadetblue;
+        border: 1px solid mix(rgb(78, 153, 55), teal, 50%);
+    }
+      
+
     .ctable {
         display: flex;
         flex-wrap: wrap;

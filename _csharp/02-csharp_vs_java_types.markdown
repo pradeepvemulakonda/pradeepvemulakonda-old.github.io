@@ -6,8 +6,10 @@ comments: true
 classes: wide
 repository: pradeepvemulakonda
 staticman.branch: master
+toc: true
 ---
-### CLS and JVM Types:
+
+Introduction to C# and Java type systems. Links to details are provided for reference.
 
 Both specifications defines how types are declared, used, and managed in the language runtime([VES](https://en.wikipedia.org/wiki/Virtual_Execution_System), [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine)) and is also an important part of the runtime's support for cross-language integration.
 

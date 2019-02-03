@@ -195,7 +195,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
-  - jekyll-feed
+  - jekyll-toc
   - jemoji
 
 # mimic GitHub Pages with --safe
@@ -204,6 +204,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-toc
   - jemoji
 
 

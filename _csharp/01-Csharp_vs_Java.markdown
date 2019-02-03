@@ -1,17 +1,15 @@
 ---
 layout: page-collection
 title:  "C# for Java Developers"
-date:   2019-01-08 9:20:30 +1100
 categories: csharp
 comments: true
 classes: wide
 repository: pradeepvemulakonda
 staticman.branch: master
+toc: true
 ---
 
-### C# for Java Developers
-
-This blog draws comparison between java and c# at an API level and tries to make it simple for C# or Java developers to gain either skills.
+This page draws comparison between java and c# at an API level and tries to make it simple for C# or Java developers to gain either skills.
 
 This is part of my journey in learning C# as a Java dev and thought it might help fellow devs to create this document.
 
@@ -34,3 +32,4 @@ Both languages have automated garbage collection and use heap as the primary sto
 - *JVM Specification:* [JVM Specification](https://docs.oracle.com/javase/specs/jvms/se11/html/index.html)
 - *CLR Specification:* [CLR Specification](https://www.ecma-international.org/publications/standards/Ecma-335.htm)
 
+<h1>{{ page.relative_directory }} directory</h1>
