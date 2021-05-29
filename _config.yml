@@ -12,7 +12,7 @@ title                    : " Design thinking"
 title_separator          : "-"
 name                     : "Pradeep Vemulakonda"
 description              : "Design bytes"
-url                      : "https://vemulakonda.com"
+url                      : "https://clinik.review"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : pradeepvemulakonda/pradeepvemulakonda.github.io
 teaser                   : "/assets/images/teaser.jpg"
