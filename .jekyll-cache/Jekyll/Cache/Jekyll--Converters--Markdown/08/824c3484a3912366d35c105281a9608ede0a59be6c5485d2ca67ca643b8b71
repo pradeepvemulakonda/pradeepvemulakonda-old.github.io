@@ -1,0 +1,29 @@
+I"Ì<p>This page draws comparison between java and c# at an API level and tries to make it simple for C# or Java developers to gain either skills.</p>
+
+<p>This is part of my journey in learning C# as a Java dev and thought it might help fellow devs to create this document.</p>
+
+<h4 id="introduction">Introduction:</h4>
+
+<p>Java and C# are both complied languages. Both languages are object oriented and support functional constructs.</p>
+
+<p>Both languages are written to be compiled to an intermediate language. And need a virtual machine/runtime to execute on the target systems.</p>
+
+<p>Both languages have automated garbage collection and use heap as the primary storage mechanism.</p>
+
+<blockquote>
+  <p>Initially I will not dwell into the differences but will try to draw parallels between the language features and APIâ€™s.</p>
+</blockquote>
+
+<h4 id="specifications">Specifications</h4>
+
+<ul>
+  <li><em>Java Specifications:</em> <a href="https://docs.oracle.com/javase/specs/jls/se11/html/index.html">Java SE Specification</a></li>
+  <li><em>C# Specifications:</em> <a href="https://github.com/dotnet/csharplang/tree/master/spec">C# 6 draft specs</a></li>
+</ul>
+
+<h4 id="runtime">Runtime</h4>
+<ul>
+  <li><em>JVM Specification:</em> <a href="https://docs.oracle.com/javase/specs/jvms/se11/html/index.html">JVM Specification</a></li>
+  <li><em>CLR Specification:</em> <a href="https://www.ecma-international.org/publications/standards/Ecma-335.htm">CLR Specification</a></li>
+</ul>
+:ET

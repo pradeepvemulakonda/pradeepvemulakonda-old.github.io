@@ -1,0 +1,81 @@
+I"!<p>Introduction to C# and Java type systems. Links to details are provided for reference.</p>
+
+<p>Both specifications defines how types are declared, used, and managed in the language runtime(<a href="https://en.wikipedia.org/wiki/Virtual_Execution_System">VES</a>, <a href="https://en.wikipedia.org/wiki/Java_virtual_machine">JVM</a>) and is also an important part of the runtime’s support for cross-language integration.</p>
+
+<ul>
+  <li>Enables type safety and high performant code across platforms and languagues.</li>
+  <li>Defines rules that the languague must follow, which ensures objects created in different languagues can intercat with each other.
+(<a href="https://en.wikipedia.org/wiki/Visual_Basic_.NET">VB.Net</a> can talk to C# libraries, <a href="https://en.wikipedia.org/wiki/Apache_Groovy">Groovy</a> can use Java libraries).</li>
+  <li>Provides primitive types used in application development.</li>
+</ul>
+
+<p>This topic contains the following sections:</p>
+
+<ul>
+  <li><a href="#headTypes">Types</a></li>
+  <li><a href="#headDef">Type definitions</a></li>
+  <li><a href="#headMem">Type members</a></li>
+  <li><a href="#headChar">Characteristics of Type members</a></li>
+</ul>
+
+<h4 id="-types"><a name="headTypes"></a> Types</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Types</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CLR</td>
+      <td><li>Classes</li><li>Structures</li><li>Enumerations</li><li>Interfaces</li><li>Delegates </td>
+    </tr>
+    <tr>
+      <td>JVM</td>
+      <td><li>Classes</li><li>Arrays</li><li>Enumerations</li><li>Interfaces </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="-type-definitions"><a name="headDef"></a> Type definitions</h4>
+
+<p>Class:</p>
+
+<div class="ctable">
+    <div class="column head">
+        <div>Keyword</div>
+    </div>
+    <div class="column content">
+        <div class="content-wrapper">
+            <div>
+                <div class="lang"><img alt="csharp" src="/assets/images/cs.svg" /></div>
+                <div class="desc">
+                Class in C# is defined by the keyword 'class'
+                    <div class="high-background">
+                   
+<code class="highlight language-csharp" data-lang="csharp"><pre class="pre-code"><span class="k">class</span> <span class="nc">ClassA</span> <span class="p">{</span>
+
+<span class="p">}</span></pre></code>
+                    </div> 
+                </div>
+            </div>
+            <div>
+                <div class="lang"><img alt="csharp" src="/assets/images/java.svg" /></div>
+                <div class="desc">
+                    <div class="high-background">
+<code class="highlight language-csharp" data-lang="csharp"><pre class="pre-code"><span class="k">class</span> <span class="nc">ClassA</span> <span class="p">{</span>
+    
+<span class="p">}</span></pre></code>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h4 id="-type-members"><a name="headMem"></a> Type members</h4>
+
+<h4 id="-characteristics-of-type-members"><a name="headChar"></a> Characteristics of Type members</h4>
+:ET

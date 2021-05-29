@@ -1,0 +1,207 @@
+I"¤><div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="separator" style="clear: both; text-align: center;">
+<a><img border="0" src="/assets/images/jmeter.jpg" /></a></div>
+<br />
+<h3>POM to automatically run JMeter as part of Continuos Integration (CI)</h3>
+<br />
+There is not much information on the web to do the same and I had spent a significant about of effort to get it working.<br />
+<br />
+Hopefully, the attached pom should provide a base for anyone looking for a starting point<br />
+<br />
+This script assumes that you are trying to use your custom JMeter build along with plugins.<br />
+<br />
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;project</span> <span class="na">xmlns=</span><span class="s">"http://maven.apache.org/POM/4.0.0"</span> 
+        <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> 
+        <span class="na">xsi:schemaLocation=</span><span class="s">"http://maven.apache.org/POM/4.0.0 
+        http://maven.apache.org/maven-v4_0_0.xsd"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;modelVersion&gt;</span>4.0.0<span class="nt">&lt;/modelVersion&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>com.test<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>performance-tests<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;packaging&gt;</span>pom<span class="nt">&lt;/packaging&gt;</span>
+    <span class="nt">&lt;version&gt;</span>1.2.0-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;name&gt;</span>test performance tests<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;dependencies&gt;</span>
+        <span class="nt">&lt;dependency&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>junit<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;artifactId&gt;</span>junit<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;version&gt;</span>3.8.1<span class="nt">&lt;/version&gt;</span>
+            <span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
+        <span class="nt">&lt;/dependency&gt;</span>
+        <span class="nt">&lt;dependency&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>org.codehaus.mojo<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;artifactId&gt;</span>chronos-jmeter-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;version&gt;</span>1.1.0<span class="nt">&lt;/version&gt;</span>
+        <span class="nt">&lt;/dependency&gt;</span>
+    <span class="nt">&lt;/dependencies&gt;</span>
+    <span class="nt">&lt;reporting&gt;</span>
+        <span class="nt">&lt;plugins&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>org.codehaus.mojo<span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>chronos-report-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+                <span class="nt">&lt;version&gt;</span>1.1.0<span class="nt">&lt;/version&gt;</span>
+                <span class="nt">&lt;configuration&gt;</span>
+                    <span class="nt">&lt;historydir&gt;</span>${project.basedir}/target/history<span class="nt">&lt;/historydir&gt;</span>
+                <span class="nt">&lt;/configuration&gt;</span>
+                <span class="nt">&lt;reportSets&gt;</span>
+                    <span class="nt">&lt;reportSet&gt;</span>
+                        <span class="nt">&lt;id&gt;</span>fixedloadreport<span class="nt">&lt;/id&gt;</span>
+                        <span class="nt">&lt;configuration&gt;</span>
+                            <span class="nt">&lt;dataid&gt;</span>performancetest<span class="nt">&lt;/dataid&gt;</span>
+                            <span class="nt">&lt;reportid&gt;</span>jmeter-fixedload-report<span class="nt">&lt;/reportid&gt;</span>
+                            <span class="nt">&lt;title&gt;</span>JMeter Fixed Load Test Report<span class="nt">&lt;/title&gt;</span>
+                            <span class="nt">&lt;description&gt;</span>
+                                <span class="cp">&lt;![CDATA[Fixed Load Test Report]]&gt;</span>
+                            <span class="nt">&lt;/description&gt;</span>
+                        <span class="nt">&lt;/configuration&gt;</span>
+                        <span class="nt">&lt;reports&gt;</span>
+                            <span class="nt">&lt;report&gt;</span>report<span class="nt">&lt;/report&gt;</span>
+                            <span class="nt">&lt;report&gt;</span>historyreport<span class="nt">&lt;/report&gt;</span>
+                        <span class="nt">&lt;/reports&gt;</span>
+                    <span class="nt">&lt;/reportSet&gt;</span>
+                <span class="nt">&lt;/reportSets&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+        <span class="nt">&lt;/plugins&gt;</span>
+    <span class="nt">&lt;/reporting&gt;</span>
+    <span class="nt">&lt;build&gt;</span>
+        <span class="nt">&lt;plugins&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>org.codehaus.mojo<span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>chronos-jmeter-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+                <span class="nt">&lt;version&gt;</span>1.1.0<span class="nt">&lt;/version&gt;</span>
+                <span class="nt">&lt;configuration&gt;</span>
+                    <span class="nt">&lt;jmeterhome&gt;</span>${project.basedir}/target/jmeter<span class="nt">&lt;/jmeterhome&gt;</span>
+                    <span class="nt">&lt;input&gt;</span>${project.basedir}/src/test/jmeter/main.jmx<span class="nt">&lt;/input&gt;</span>
+                    <span class="nt">&lt;heap&gt;</span>756m<span class="nt">&lt;/heap&gt;</span>
+                    <span class="nt">&lt;jmeterVariables&gt;</span>
+                        <span class="nt">&lt;dataid&gt;</span>fixedloadtest<span class="nt">&lt;/dataid&gt;</span>
+                        <span class="nt">&lt;property&gt;</span>
+                            <span class="nt">&lt;name&gt;</span>gsHost<span class="nt">&lt;/name&gt;</span>
+                            <span class="nt">&lt;value&gt;</span>${gsHost}<span class="nt">&lt;/value&gt;</span>
+                        <span class="nt">&lt;/property&gt;</span>
+                        <span class="nt">&lt;property&gt;</span>
+                            <span class="nt">&lt;name&gt;</span>gsPort<span class="nt">&lt;/name&gt;</span>
+                            <span class="nt">&lt;value&gt;</span>${gsPort}<span class="nt">&lt;/value&gt;</span>
+                        <span class="nt">&lt;/property&gt;</span>
+                        <span class="nt">&lt;property&gt;</span>
+                            <span class="nt">&lt;name&gt;</span>jmeter.save.saveservice.output_format<span class="nt">&lt;/name&gt;</span>
+                            <span class="nt">&lt;value&gt;</span>xml<span class="nt">&lt;/value&gt;</span>
+                        <span class="nt">&lt;/property&gt;</span>
+                        <span class="nt">&lt;property&gt;</span>
+                            <span class="nt">&lt;name&gt;</span>gsProtocol<span class="nt">&lt;/name&gt;</span>
+                            <span class="nt">&lt;value&gt;</span>http<span class="nt">&lt;/value&gt;</span>
+                        <span class="nt">&lt;/property&gt;</span>                        
+                        <span class="nt">&lt;property&gt;</span>
+                            <span class="nt">&lt;name&gt;</span>gsUserFilePath<span class="nt">&lt;/name&gt;</span>
+                            <span class="nt">&lt;value&gt;</span>${project.basedir}/in/users.csv<span class="nt">&lt;/value&gt;</span>
+                        <span class="nt">&lt;/property&gt;</span>
+                        <span class="nt">&lt;property&gt;</span>
+                            <span class="nt">&lt;name&gt;</span>gsPFilePath<span class="nt">&lt;/name&gt;</span>
+                            <span class="nt">&lt;value&gt;</span>${project.basedir}/in/patients.csv<span class="nt">&lt;/value&gt;</span>
+                        <span class="nt">&lt;/property&gt;</span>
+                        <span class="nt">&lt;property&gt;</span>
+                            <span class="nt">&lt;name&gt;</span>gsListTemplateFilePath<span class="nt">&lt;/name&gt;</span>
+                            <span class="nt">&lt;value&gt;</span>${project.basedir}/in/payloads/List.json<span class="nt">&lt;/value&gt;</span>
+                        <span class="nt">&lt;/property&gt;</span>
+                        <span class="nt">&lt;property&gt;</span>
+                            <span class="nt">&lt;name&gt;</span>gsEnableDataPopulation<span class="nt">&lt;/name&gt;</span>
+                            <span class="nt">&lt;value&gt;</span>0<span class="nt">&lt;/value&gt;</span>
+                        <span class="nt">&lt;/property&gt;</span>
+                    <span class="nt">&lt;/jmeterVariables&gt;</span>
+                <span class="nt">&lt;/configuration&gt;</span>
+                <span class="nt">&lt;executions&gt;</span>
+                    <span class="nt">&lt;execution&gt;</span>
+                        <span class="nt">&lt;id&gt;</span>jmeter-tests<span class="nt">&lt;/id&gt;</span>
+                        <span class="nt">&lt;phase&gt;</span>test<span class="nt">&lt;/phase&gt;</span>
+                        <span class="nt">&lt;goals&gt;</span>
+                            <span class="nt">&lt;goal&gt;</span>jmeter<span class="nt">&lt;/goal&gt;</span>
+                        <span class="nt">&lt;/goals&gt;</span>
+                    <span class="nt">&lt;/execution&gt;</span>
+                <span class="nt">&lt;/executions&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>exec-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>org.codehaus.mojo<span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;executions&gt;</span>
+                    <span class="nt">&lt;execution&gt;</span>
+                        <span class="c">&lt;!-- Run our version calculation script --&gt;</span>
+                        <span class="nt">&lt;id&gt;</span>Generate Users<span class="nt">&lt;/id&gt;</span>
+                        <span class="nt">&lt;phase&gt;</span>generate-sources<span class="nt">&lt;/phase&gt;</span>
+                        <span class="nt">&lt;goals&gt;</span>
+                            <span class="nt">&lt;goal&gt;</span>exec<span class="nt">&lt;/goal&gt;</span>
+                        <span class="nt">&lt;/goals&gt;</span>
+                        <span class="nt">&lt;configuration&gt;</span>
+                            <span class="nt">&lt;executable&gt;</span>
+                             ${project.basedir}/lib/internal/create-and-copy-users.sh
+                            <span class="nt">&lt;/executable&gt;</span>
+                        <span class="nt">&lt;/configuration&gt;</span>
+                    <span class="nt">&lt;/execution&gt;</span>
+                <span class="nt">&lt;/executions&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>maven-resources-plugin<span class="nt">&lt;/artifactId&gt;</span>
+                <span class="nt">&lt;version&gt;</span>2.7<span class="nt">&lt;/version&gt;</span>
+                <span class="nt">&lt;executions&gt;</span>
+                    <span class="nt">&lt;execution&gt;</span>
+                        <span class="nt">&lt;id&gt;</span>copy-resources<span class="nt">&lt;/id&gt;</span>
+                        <span class="c">&lt;!-- here the phase you need --&gt;</span>
+                        <span class="nt">&lt;phase&gt;</span>validate<span class="nt">&lt;/phase&gt;</span>
+                        <span class="nt">&lt;goals&gt;</span>
+                            <span class="nt">&lt;goal&gt;</span>copy-resources<span class="nt">&lt;/goal&gt;</span>
+                        <span class="nt">&lt;/goals&gt;</span>
+                        <span class="nt">&lt;configuration&gt;</span>
+                            <span class="nt">&lt;outputDirectory&gt;</span>
+                                 ${project.basedir}/target/jmeter
+                            <span class="nt">&lt;/outputDirectory&gt;</span>
+                            <span class="nt">&lt;resources&gt;</span>
+                                <span class="nt">&lt;resource&gt;</span>
+                                    <span class="nt">&lt;directory&gt;</span>apache-jmeter-2.13<span class="nt">&lt;/directory&gt;</span>
+                                    <span class="nt">&lt;filtering&gt;</span>false<span class="nt">&lt;/filtering&gt;</span>
+                                <span class="nt">&lt;/resource&gt;</span>
+                            <span class="nt">&lt;/resources&gt;</span>
+                        <span class="nt">&lt;/configuration&gt;</span>
+                    <span class="nt">&lt;/execution&gt;</span>
+                <span class="nt">&lt;/executions&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+        <span class="nt">&lt;/plugins&gt;</span>
+        <span class="nt">&lt;pluginManagement&gt;</span>
+         <span class="nt">&lt;plugins&gt;</span>
+          <span class="c">&lt;!--This plugin's configuration is used to store 
+          Eclipse m2e settings only. It has no influence on the Maven build itself.--&gt;</span>
+          <span class="nt">&lt;plugin&gt;</span>
+           <span class="nt">&lt;groupId&gt;</span>org.eclipse.m2e<span class="nt">&lt;/groupId&gt;</span>
+           <span class="nt">&lt;artifactId&gt;</span>lifecycle-mapping<span class="nt">&lt;/artifactId&gt;</span>
+           <span class="nt">&lt;version&gt;</span>1.0.0<span class="nt">&lt;/version&gt;</span>
+           <span class="nt">&lt;configuration&gt;</span>
+            <span class="nt">&lt;lifecycleMappingMetadata&gt;</span>
+             <span class="nt">&lt;pluginExecutions&gt;</span>
+              <span class="nt">&lt;pluginExecution&gt;</span>
+               <span class="nt">&lt;pluginExecutionFilter&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>
+                 org.codehaus.mojo
+                <span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>
+                 exec-maven-plugin
+                <span class="nt">&lt;/artifactId&gt;</span>
+                <span class="nt">&lt;versionRange&gt;</span>
+                 [1.4.0,)
+                <span class="nt">&lt;/versionRange&gt;</span>
+                <span class="nt">&lt;goals&gt;</span>
+                 <span class="nt">&lt;goal&gt;</span>exec<span class="nt">&lt;/goal&gt;</span>
+                <span class="nt">&lt;/goals&gt;</span>
+               <span class="nt">&lt;/pluginExecutionFilter&gt;</span>
+               <span class="nt">&lt;action&gt;</span>
+                <span class="nt">&lt;ignore&gt;&lt;/ignore&gt;</span>
+               <span class="nt">&lt;/action&gt;</span>
+              <span class="nt">&lt;/pluginExecution&gt;</span>
+             <span class="nt">&lt;/pluginExecutions&gt;</span>
+            <span class="nt">&lt;/lifecycleMappingMetadata&gt;</span>
+           <span class="nt">&lt;/configuration&gt;</span>
+          <span class="nt">&lt;/plugin&gt;</span>
+         <span class="nt">&lt;/plugins&gt;</span>
+        <span class="nt">&lt;/pluginManagement&gt;</span>
+    <span class="nt">&lt;/build&gt;</span>
+<span class="nt">&lt;/project&gt;</span></code></pre></figure>
+
+</div>
+:ET

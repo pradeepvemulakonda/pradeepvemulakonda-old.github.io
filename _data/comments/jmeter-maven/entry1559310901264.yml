@@ -1,0 +1,5 @@
+_id: aedce830-83ab-11e9-8f9e-75cbd2e1542a
+message: "You could always use the Jmeter Maven Plugin:\r\n\r\nhttps://github.com/jmeter-maven-plugin/jmeter-maven-plugin\r\n\r\nThere's quite a bit of documentation knocking about on the web and you can add in custom JMeter builds by specifying your own JMeter binaries:\r\n\r\nhttps://github.com/jmeter-maven-plugin/jmeter-maven-plugin/wiki/Specifying-JMeter-Version"
+name: Ardesco
+hidden: ''
+date: 1559310901
