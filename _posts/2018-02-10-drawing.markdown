@@ -1,9 +1,0 @@
----
-layout: single
-title:  "For my daughter"
-date:   2018-02-10 19:20:30 +1100
-categories: personal
-comments: true
-classes: wide
----
-![Elsa and Anna](/assets/images/elsa.jpg){:class="img-responsive"}
