@@ -9,10 +9,10 @@ source "https://rubygems.org"
 # Happy Jekylling!
 # gem "jekyll", "~> 4.2.0"
 
-gem "github-pages", "~> 215", group: :jekyll_plugins
+gem "github-pages", "~> 214", group: :jekyll_plugins
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima"
+gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
@@ -26,7 +26,7 @@ end
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", "~> 1.2"
   gem "tzinfo-data"
-  gem "webrick"
+  gem "webrik"
 end
 
 # Performance-booster for watching directories on Windows
