@@ -30,7 +30,7 @@ twitter_username: pradeepvemulako
 github_username:  pradeepvemulakonda
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 
